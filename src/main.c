@@ -16,7 +16,7 @@ int main(int argc, char* argv[]) {
     if(argc <= 1) {
         usage();
         printf("This will generate a secure password with a default length of 12\n\n");
-    } else if(argc == 3) {
+    } else if(!(strcmp(argv[1], "--length"))) {
         /*pass_len = atoi(argv[2]);*/
         sscanf(argv[2], "%zd", &pass_len);
     } else {
