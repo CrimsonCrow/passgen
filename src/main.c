@@ -21,6 +21,7 @@ int main(int argc, char* argv[]) {
         sscanf(argv[2], "%zd", &pass_len);
     } else {
         usage();
+        return -1;
     }
 
     /*
