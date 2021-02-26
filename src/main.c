@@ -7,15 +7,18 @@
 
 void usage() {
     printf("Usage:\t./passgen -L 12 -l -u -n -s\n\n");
-    printf("options:\n\t-L : length of the password to generate : default to 12\n");
+    printf("options:\n\t-L : length of the password to generate : default to "
+           "12\n");
     printf("\t-l : lower case\n");
     printf("\t-u : upper case\n");
     printf("\t-n : numbers\n");
     printf("\t-s : special characters\n");
 
     printf("\nexamples:\n");
-    printf("\t./passgen -lu : will generate password of length 12 with lower case and upper case.\n");
-    printf("\t./passgen -L 48 -ns : will generate password of length 48 with numbers and special characters.\n");
+    printf("\t./passgen -lu : will generate password of length 12 with lower "
+           "case and upper case.\n");
+    printf("\t./passgen -L 48 -ns : will generate password of length 48 with "
+           "numbers and special characters.\n");
 }
 
 int main(int argc, char* argv[]) {
