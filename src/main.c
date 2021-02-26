@@ -62,6 +62,10 @@ int main(int argc, char* argv[]) {
     }
 
     size_t alpha_len = strlen(alpha);
+    if(alpha_len == 0) {
+        usage();
+        return -1;
+    }
     char pass[pass_len];
 
     for(size_t i = 0; i < pass_len; ++i) {
